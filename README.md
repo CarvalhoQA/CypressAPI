@@ -16,33 +16,69 @@ Para mais detalhes visite o repositório oficial do ServeRest(https://github.com
 
 **Arquitetura**
 
-Testes de API
-1 - Realizar testes no endpoint usuários (/usuarios)
+--Testes de API--
+
+- Realizar testes no endpoint usuários (/usuarios)
+
 ..//cypress/integration/services/usuarios
+
 payloads -> Contém os Bodys da das Requisições
+
+
 request -> Contém a contrução dos metodos GET,POST,PUT,DELETE
+
+
 test -> Contém os aquivos executaveis dos testes .spec.js
 
-2 - Realizar testes de contrato para o verbo POST do endpoint de Produtos (/produtos).
+
+
+- Realizar testes de contrato para o verbo POST do endpoint de Produtos (/produtos).
+
 ..//cypress/integration/services/produtos
+
 payloads -> Contém os Bodys da das Requisições
+
+
 request -> Contém a contrução dos metodos GET,POST,PUT,DELETE
+
+
 test -> Contém os aquivos executaveis dos testes .spec.js
 
-3 – Realizar a pesquisa de carrinhos que tenha produtos com quantidade total superior a 5 (resultado deve retornar no mínimo 3 carrinhos).
+
+
+– Realizar a pesquisa de carrinhos que tenha produtos com quantidade total superior a 5 (resultado deve retornar no mínimo 3 carrinhos).
+
 ..//cypress/integration/services/carrinhos
+
+
 payloads -> Contém os Bodys da das Requisições
+
+
 request -> Contém a contrução dos metodos GET,POST,PUT,DELETE
+
+
 test -> Contém os aquivos executaveis dos testes .spec.js
 
-Testes Front End (Page Objects)
+
+
+--Testes Front End (Page Objects)--
+
+
 - Login com usuário bloqueado, e validar a mensagem de bloqueio exibida;
+
+
 - Realizar uma compra completa com mais de um produto no carrinho;
+
+
 - Adicionar todos os produtos ao carrinho e validar o valor total da compra a ser pago.
 
+
 ..//cypress/integration/frontend
+
+
 swaglabs.spec.js -> Contém os aquivos executavel dos testes
 
-..//cypress//support//pages -> Contém as páginas dos testes com seus index.js e Elements.js
+
+..//cypress/support/pages -> Contém as páginas dos testes com seus index.js e Elements.js
 
 
